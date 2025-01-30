@@ -1,5 +1,5 @@
 function calc() {
-// Creates variables for operator, number 1, and number 2
+// Creates constant for operator, number 1, and number 2 by creating a prompt and using the value given by the user as the constant
 const n1 = prompt(`First Number`);
 const operator = prompt("Operator");
 const n2 = prompt(`Second Number`);
@@ -19,6 +19,9 @@ if(operator == '+') {
     result.innerHTML = answer
 } else if(operator == '/') {
     answer = n1 / n2;
+    result.innerHTML = answer
+} else {
+    answer = "ERROR: improper number or operator used"
     result.innerHTML = answer
 }
 }
